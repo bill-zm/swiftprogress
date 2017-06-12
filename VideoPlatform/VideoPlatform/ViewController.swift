@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
         btn?.setTitle("UCON", for: .normal)
+        NetWorkManager.sharedInstance.getDishList(params: [:], success: { (mod:DishesModle) in
+            for detail in mod.entity!{
+                print(detail.name)
+            }
+        }) { (ero:Any) in
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,9 +35,17 @@ class ViewController: UIViewController {
 //                                  completionHandler: {
 //                                    (success) in
 ////                                    print("Open"+success)
-//        })
-        self.present(fis, animated: true) {
+//        })'
+        NetWorkManager.sharedInstance.getDishList(params: [:], success: { (mod:DishesModle) in
+            for detail in mod.entity!{
+                print(detail.name)
+            }
+        }) { (ero:Any) in
             
         }
+
+//        self.present(fis, animated: true) {
+//            
+//        }
     }
 }

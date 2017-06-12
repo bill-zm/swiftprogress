@@ -15,6 +15,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - HandyJSON (1.7.1)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -28,6 +29,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - BlocksKit
+  - HandyJSON
   - Mantle
   - Realm
   - RealmSwift
@@ -36,11 +38,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
   RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: ffc50b27f17c04632039a18d6c413ce3554c81f9
+PODFILE CHECKSUM: fbfa8dc71c98f271f2334be2c6360a69eb330854
 
 COCOAPODS: 1.2.0

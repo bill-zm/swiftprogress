@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685876911EEE7188001E8CDD /* DishesModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685876901EEE7188001E8CDD /* DishesModle.swift */; };
 		689024FB1EE930E600BB2C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689024FA1EE930E600BB2C63 /* AppDelegate.swift */; };
 		689024FD1EE930E600BB2C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689024FC1EE930E600BB2C63 /* ViewController.swift */; };
 		689025001EE930E600BB2C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689024FE1EE930E600BB2C63 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		09EAB04815BCC3A1008BC39E /* Pods_VideoPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D011BC5936382778A7E489 /* Pods-VideoPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPlatform/Pods-VideoPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		685876901EEE7188001E8CDD /* DishesModle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishesModle.swift; sourceTree = "<group>"; };
 		689024F71EE930E600BB2C63 /* VideoPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689024FA1EE930E600BB2C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689024FC1EE930E600BB2C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6858768F1EEE7165001E8CDD /* modle */ = {
+			isa = PBXGroup;
+			children = (
+				685876901EEE7188001E8CDD /* DishesModle.swift */,
+			);
+			path = modle;
+			sourceTree = "<group>";
+		};
 		689024EE1EE930E600BB2C63 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		689024F91EE930E600BB2C63 /* VideoPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				6858768F1EEE7165001E8CDD /* modle */,
 				689CDA171EEA959400A88DA5 /* manage */,
 				689024FA1EE930E600BB2C63 /* AppDelegate.swift */,
 				689024FC1EE930E600BB2C63 /* ViewController.swift */,
@@ -378,6 +389,7 @@
 				689025031EE930E600BB2C63 /* VideoPlatform.xcdatamodeld in Sources */,
 				689024FB1EE930E600BB2C63 /* AppDelegate.swift in Sources */,
 				689025341EE945E500BB2C63 /* ACViewController.m in Sources */,
+				685876911EEE7188001E8CDD /* DishesModle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +470,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang_armlinux@163.com (LE3E29VJKY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q49968XGJS;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -511,6 +524,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang_armlinux@163.com (LE3E29VJKY)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q49968XGJS;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -539,10 +553,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_armlinux@163.com (LE3E29VJKY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q49968XGJS;
 				INFOPLIST_FILE = VideoPlatform/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suns.www.VideoPlatform;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -560,10 +576,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_armlinux@163.com (LE3E29VJKY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q49968XGJS;
 				INFOPLIST_FILE = VideoPlatform/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suns.www.VideoPlatform;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

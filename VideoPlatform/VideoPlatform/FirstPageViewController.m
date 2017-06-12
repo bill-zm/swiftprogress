@@ -7,7 +7,7 @@
 //
 
 #import "FirstPageViewController.h"
-
+#import "VideoPlatform-Swift.h"
 @interface FirstPageViewController ()
 
 @end
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+//    [[NetWorkManager sharedInstance] ];
 }
 
 - (void)didReceiveMemoryWarning {

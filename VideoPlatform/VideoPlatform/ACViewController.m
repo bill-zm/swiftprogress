@@ -7,7 +7,7 @@
 //
 
 #import "ACViewController.h"
-
+#import "VideoPlatform-Swift.h"
 @interface ACViewController ()
 
 @end
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
